@@ -66,3 +66,5 @@ https://github.com/RawFish69/ESP32-RC-Car
 <img src="docs/image.webp" alt="RC Car Omni Drive">
 <img src="docs/image (1).webp" alt="RC Car Omni Drive">
 
+
+![](https://github.com/ExpressLRS/ExpressLRS-Hardware/blob/master/img/community.png?raw=true)
