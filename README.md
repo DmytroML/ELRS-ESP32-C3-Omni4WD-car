@@ -12,5 +12,6 @@ https://github.com/RawFish69/ESP32-RC-Car
 
 
 ### Omni-Drive Version
-<img src="docs/omni_build.jpg" alt="RC Car Omni Drive">
-*4-wheel omni-directional drive configuration*
+<img src="docs/image.webp" alt="RC Car Omni Drive">
+<img src="docs/image (1).webp" alt="RC Car Omni Drive">
+
