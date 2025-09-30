@@ -57,7 +57,7 @@ ELRS Receiver: RX: 20, TX: 11 (empty pin for code, not used on bord esp32-c3 sup
 
 This project demonstrates advanced motor control techniques with precise PWM management and sophisticated directional control algorithms, making it suitable for custom RC vehicle applications requiring precise movement control.
 
-### linc i used
+### I used
 https://github.com/Iloke-Alusala/ELRS-ESP32-Channel-Decoder
 https://github.com/RawFish69/ESP32-RC-Car
 
