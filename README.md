@@ -43,7 +43,7 @@ Left Front Motor (Motor 1):  Enable: 4,  Dir1: 5,  Dir2: 6
 Right Front Motor (Motor 2): Enable: 3,  Dir1: 7,  Dir2: 8
 Left Back Motor (Motor 3):   Enable: 2,  Dir1: 9,  Dir2: 10
 Right Back Motor (Motor 4):  Enable: 1,  Dir1: 0,  Dir2: 21
-ELRS Receiver: RX: 20, TX: 11
+ELRS Receiver: RX: 20, TX: 11 (empty pin for code, not used on bord esp32-c3 super mini)
 ```
 
 ## Dependencies
