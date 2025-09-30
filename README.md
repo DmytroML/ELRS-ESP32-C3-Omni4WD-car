@@ -6,5 +6,11 @@
 
 > A browser-based RC car project powered by ESP32-C3, featuring real-time control through an intuitive web interface with virtual joystick controls. Available in both single-board and dual-board configurations.
 
+### linc i used
 https://github.com/Iloke-Alusala/ELRS-ESP32-Channel-Decoder
 https://github.com/RawFish69/ESP32-RC-Car
+
+
+### Omni-Drive Version
+<img src="docs/omni_build.jpg" alt="RC Car Omni Drive">
+*4-wheel omni-directional drive configuration*
