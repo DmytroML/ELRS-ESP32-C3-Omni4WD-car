@@ -4,7 +4,58 @@
 [![ESP32](https://img.shields.io/badge/ESP32-any-000000.svg?style=for-the-badge&logo=espressif&logoColor=white)](https://www.espressif.com/en/products/modules/esp32)
 [![ESP-NOW](https://img.shields.io/badge/ESP--NOW-Protocol-green.svg?style=for-the-badge&logo=espressif&logoColor=white)](https://www.espressif.com/en/products/software/esp-now/overview)
 
-> A browser-based RC car project powered by ESP32-C3, featuring real-time control through an intuitive web interface with virtual joystick controls. Available in both single-board and dual-board configurations.
+
+A robust ESP32-C3 based RC (Remote Control) car controller project that uses ELRS (ExpressLRS) protocol for radio control. The project is built using PlatformIO and Arduino framework.
+
+## Hardware
+- Board: Adafruit QT Py ESP32-C3
+- Radio: ELRS 2.4GHz receiver
+- Motors: 4 DC motors (4-wheel drive configuration)
+
+## Features
+- 4-wheel independent motor control
+- Smooth acceleration and direction control
+- Advanced directional control with proportional steering
+- Emergency stop functionality
+- Real-time serial monitoring (115200 baud)
+- PWM motor control with 10-bit resolution (0-1023)
+
+## Motor Configuration
+- 4 independent motor channels
+- Each motor has:
+  - PWM speed control pin
+  - Two direction control pins (H-bridge configuration)
+- PWM Frequency: 50Hz
+- Adjustable motor speed range (MIN_PWM: 300, MAX_PWM: 2048)
+
+## Control System
+- Uses AlfredoCRSF library for ELRS protocol communication
+- Implements:
+  - Forward/Backward control
+  - Left/Right steering
+  - Variable speed control (0-100%)
+  - Proportional turning with trigonometric calculations
+  - Emergency stop on channel 5
+
+## Pin Configuration
+```
+Left Front Motor (Motor 1):  Enable: 4,  Dir1: 5,  Dir2: 6
+Right Front Motor (Motor 2): Enable: 3,  Dir1: 7,  Dir2: 8
+Left Back Motor (Motor 3):   Enable: 2,  Dir1: 9,  Dir2: 10
+Right Back Motor (Motor 4):  Enable: 1,  Dir1: 0,  Dir2: 21
+ELRS Receiver: RX: 20, TX: 11
+```
+
+## Dependencies
+- AlfredoCRSF library
+- ESP32 Arduino core (platform-espressif32)
+
+## Safety Features
+- Emergency stop function
+- Motor safety checks
+- Fail-safe motor state handling
+
+This project demonstrates advanced motor control techniques with precise PWM management and sophisticated directional control algorithms, making it suitable for custom RC vehicle applications requiring precise movement control.
 
 ### linc i used
 https://github.com/Iloke-Alusala/ELRS-ESP32-Channel-Decoder
